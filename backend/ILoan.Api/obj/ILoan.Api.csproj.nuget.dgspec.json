@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj": {}
+    "E:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj": {}
   },
   "projects": {
-    "e:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj": {
+    "E:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj",
+        "projectUniqueName": "E:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj",
         "projectName": "ILoan.Api",
-        "projectPath": "e:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj",
+        "projectPath": "E:\\doc\\iloan-poc\\backend\\ILoan.Api\\ILoan.Api.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "e:\\doc\\iloan-poc\\backend\\ILoan.Api\\obj\\",
+        "outputPath": "E:\\doc\\iloan-poc\\backend\\ILoan.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
