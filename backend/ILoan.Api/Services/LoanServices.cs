@@ -1,12 +1,12 @@
 using ILoan.Api.Data;
-using ILoan.Api.Models; 
+using ILoan.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ILoan.Api.Services;
 
 public interface ILoanService
 {
-    Task<IEnumerable<LoanResponse>> GetLoansAsync(LoanStatus? status= null);
+    Task<IEnumerable<LoanResponse>> GetLoansAsync(LoanStatus? status = null);
     Task<LoanResponse?> GetLoanByIdAsync(Guid id);
     Task<LoanResponse> CreateLoanAsync(CreateLoanRequest request);
 }
@@ -20,7 +20,7 @@ public class LoanService : ILoanService
         _context = context;
     }
 
-    public async Task<IEnumerable<LoanResponse>> GetAllLoansAsync(LoanStatus? status = null)
+    public async Task<IEnumerable<LoanResponse>> GetLoansAsync(LoanStatus? status = null)
     {
         var query = _context.LoanApplications.AsQueryable();
 
@@ -60,7 +60,7 @@ public class LoanService : ILoanService
         return MapToResponse(loan);
     }
 
-    // Standard Amortization / Annuity Formula: PMT = [P * r * (1+r)^n] / [(1+r)^n - 1]
+    // Standard Annuity Formula: PMT = [P * r * (1+r)^n] / [(1+r)^n - 1]
     private static decimal CalculateMonthlyPayment(decimal principal, int tenureMonths, decimal annualRate)
     {
         if (tenureMonths <= 0 || principal <= 0) return 0;
