@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ILoan.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+578da3f96af9913c8c8b4cd3f9eee9ce0e1212a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52dad1fb44a89e73156e6f51e66562e858067834")]
 [assembly: System.Reflection.AssemblyProductAttribute("ILoan.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ILoan.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
