@@ -9,12 +9,14 @@ public enum LoanStatus
 
 public class LoanApplication
 {
-    public Guid GuId { get; set; } = Guid.NewGuid();
-    public string ApplicantName { get; set; } = string.Empty;
-    public decimal LoanAmount { get; set; }
-    public int TenureMonths { get; set; }
-    public decimal InterestRate { get; set; } = 6.5m;
-    public decimal MonthlyPayment { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public LoanStatus Status { get; set; } = LoanStatus.Pending;
+    public int GuId { get; set; }= Guid.NewGuid();
+    public string ApplicantName { get; set; }= string.Empty;
+    public string LoanAmount { get; set; }
+    public string TenureMonths { get; set; }
+    public string InterestRate { get; set; }=6.5m;
+    public string MonthlyPayment { get; set; }
+    
+    public LoanStatus Status { get; set; }= LoanStatus.Pending;
+    
+    public  DateTime CreatedAt { get; set; }= DateTime.UtcNow;
 }
